@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './index.css'; // Ensure your CSS file is correctly set up
-
+import SimpleMap from './GoogleMaps';
 const BirthdayWishUI = () => {
   const [message, setMessage] = useState('');
 
@@ -31,13 +31,13 @@ const BirthdayWishUI = () => {
           placeholder="Type your wish here... And yes I Won't Be Able To Read This "
           required
         />
-         <h2>Meet Me At Domino 4PM </h2>
+         <h2>Meet Me At Domino 24.042772856724373, 84.07724777935476</h2>
         <button type="submit" className="button">
           Send Wish
         </button>
        
       </form>
-     
+     <SimpleMap/>
     </div>
   );
 };

@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import BirthdayMessage from './BirthdayMessage';
 import MapWithMarker from './location';
+import SimpleMap from './GoogleMaps.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +21,9 @@ const router = createBrowserRouter([
   },{
     path:"/party",
     element:<MapWithMarker/>
+  },{
+    path: "/kk",
+    element: <SimpleMap/>
   }
 ]);
 
